@@ -1,0 +1,13 @@
+{
+  "name": "Life OS",
+  "short_name": "Life OS",
+  "description": "Mon tableau de bord personnel",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#0b0c10",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

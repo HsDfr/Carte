@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Life OS</title>
+  <meta name="description" content="Mon tableau de bord personnel : journée, rituels, boîte de réception, objectifs et projets." />
+  <meta name="theme-color" content="#0b0c10" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Life OS" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Barre latérale (ordinateur) -->
+    <aside class="sidebar" aria-label="Navigation principale">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-name">Life OS</div>
+          <div class="brand-sub" id="brand-sub">Mon espace</div>
+        </div>
+      </div>
+      <button class="capture-btn" data-global="capture">
+        <span class="ico" data-icon="plus"></span>
+        <span>Capturer</span>
+        <kbd>N</kbd>
+      </button>
+      <nav class="side-nav" id="side-nav"></nav>
+      <div class="side-foot" id="side-foot"></div>
+    </aside>
+
+    <!-- Contenu -->
+    <main class="main" id="main">
+      <div class="view" id="view" tabindex="-1"></div>
+    </main>
+
+    <!-- Barre d'onglets (téléphone) -->
+    <nav class="tabbar" id="tabbar" aria-label="Onglets"></nav>
+    <button class="fab" data-global="capture" aria-label="Capture rapide"><span data-icon="plus"></span></button>
+  </div>
+
+  <div id="layer"></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/views/today.js"></script>
+  <script src="assets/js/views/rituals.js"></script>
+  <script src="assets/js/views/inbox.js"></script>
+  <script src="assets/js/views/projects.js"></script>
+  <script src="assets/js/views/more.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
